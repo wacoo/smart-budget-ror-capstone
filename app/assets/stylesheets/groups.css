@@ -51,7 +51,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-    color: #000;
+    color: #434b54;
     background-color: #fff;
     height: 100px;
     font-weight: 500;
@@ -95,7 +95,7 @@
 .tr-price {
     font-weight: 600;
     font-size: 18px;
-    color: #000;
+    color: #434b54;
 }
 
 .gn-date {
@@ -113,13 +113,6 @@
     background-color: #fff;
     height: 100px;
     margin: 12px;
-}
-
-.add-category-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    outline: red 2px;
 }
 
 .groups a {
@@ -145,12 +138,12 @@
 }
 
 .add-category-wrapper a {
-    width: 60px;
+    width: 95%;
     height: 60px;
     color: #fff;
     font-size: 60px;
     border: #fff solid 1px;
-    border-radius: 50%;
+    border-radius: 10px;
     text-decoration: none;
     display: flex;
     justify-content: center;

@@ -66,7 +66,7 @@
     margin-bottom: 30px;
     padding: 12px;
     margin: 12px;
-    border: #000 dashed 2px;
+    border: #434b54 dashed 2px;
 }
 
 .line-wrapper {
@@ -100,7 +100,7 @@
     width: calc(100% - 24px);
     display: flex;
     justify-content: space-between;
-    color: #000;
+    color: #434b54;
 }
 
 .p-wrapper {
@@ -108,10 +108,4 @@
     display: flex;
     justify-content: space-between;
     padding: 12px 24px;
-
-    /* outline: red solid 2px; */
 }
-/* 
-.p-wrapper p {
-    outline: blue solid 2px;
-} */

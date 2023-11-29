@@ -1,0 +1,28 @@
+<header class="header">
+    <div class="top">
+        <!-- <img src="#" alt="Burger menu"> -->
+        <%= link_to groups_path, class: "btn btn-primary" do %>
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <% end %>
+        <h1>NEW EXPENSE</h1>
+        <%= link_to 'SIGN IN', new_user_session_path, class: "btn-user" %>
+    </div>
+</header>
+<div class="notification">
+    <%= flash[:notice] %>
+    <%= flash[:error] %>
+    <%= flash[:alert] %>
+</div>
+<div class="create-cat">
+  <%= form_with(model: @expense, url: expenses_path, method: :post, local: true) do |f| %>
+    <div class="field">
+      <%= f.label :name, class: "label" %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :group_ids, class: "label" %>
+      <%= f.select :group_ids, options_for_select(@groups.map { |group| [group.name, group.id] }, { prompt: 'Select a group' }), { multiple: false } %>
+    </div>
+    <%= f.submit "ADD EXPENSE", class: "button" %>
+  <% end %>
+</div>
