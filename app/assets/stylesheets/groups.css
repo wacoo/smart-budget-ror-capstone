@@ -133,6 +133,10 @@
   margin: 12px;
 }
 
+.groups li:hover {
+  background-color: #d7dce6;
+}
+
 .group-name-date {
   display: flex;
   flex-direction: column;
