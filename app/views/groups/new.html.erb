@@ -15,8 +15,14 @@
 </div>
 <div class="create-cat">
   <%= form_with(model: @group, url: groups_path, method: :post, local: true, multipart: true ) do |form| %>
-    <%= form.text_field :name, id: "name", placeholder: "Name" %>
-    <%= form.file_field :icon, id: "icon" %>
-    <%= form.submit "Add category", class: "button" %>
+    <div class="field">
+      <%= form.label :name, "Name" %>
+      <%= form.text_field :name, id: "name", placeholder: "Name" %>
+    </div>
+    <div class="field">
+      <%= form.label :icon, "Icon" %>
+      <%= form.file_field :icon, id: "icon" %>
+    </div>
+    <%= form.submit "ADD CATEGORY", class: "button" %>
   <% end %>
 </div>

@@ -1,9 +1,6 @@
 class ExpensesController < ApplicationController
   before_action :authenticate_user!
   layout 'application'
-  # def index
-  #     @expenses = Expense.all.includes(:groups)
-  # end
 
   def new
     @groups = Group.all
@@ -21,7 +18,7 @@ class ExpensesController < ApplicationController
         GroupExpense.create(expense: @expense, group:)
       end
 
-      redirect_to expenses_path, notice: 'Expense created successfully.'
+      redirect_to group_path(group), notice: 'Expense created successfully.'
     else
       flash.now[:error] = 'Failed to create expense.'
       @groups = Group.all

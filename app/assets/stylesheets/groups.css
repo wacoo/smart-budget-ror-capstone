@@ -13,7 +13,7 @@
 }
 
 .top h1 {
-  font-size: 32px;
+  font-size: 25px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -37,7 +37,7 @@
 }
 
 .header i {
-  font-size: 37px;
+  font-size: 27px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

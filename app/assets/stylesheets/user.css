@@ -79,6 +79,10 @@
   font-size: 25px;
 }
 
+.create-cat input {
+  margin-left: 12px;
+}
+
 .form-wrapper .check input {
   width: 25px;
   height: 25px;
@@ -95,6 +99,7 @@
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  font-size: 12px;
 }
 
 .create-cat .label {
@@ -105,4 +110,13 @@
 .create-cat .button:hover {
   background-color: #434b54;
   color: #fff;
+}
+
+.create-cat label,
+.create-cat button {
+  margin-left: 12px;
+}
+
+.create-cat label {
+  font-weight: 600;
 }
