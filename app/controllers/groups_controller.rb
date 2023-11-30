@@ -3,9 +3,9 @@ class GroupsController < ApplicationController
   layout 'application'
   def index
     @groups = if params[:order] == 'ancient'
-                Group.includes(:expenses, :group_expenses).order(created_at: :asc)
+                current_user.groups.includes(:expenses, :group_expenses).order(created_at: :asc)
               else
-                Group.includes(:expenses, :group_expenses).order(created_at: :desc)
+                current_user.groups.includes(:expenses, :group_expenses).order(created_at: :desc)
               end
 
     @group_expenses = 0
@@ -15,7 +15,7 @@ class GroupsController < ApplicationController
   end
 
   def show
-    @group = Group.includes(:expenses, :group_expenses).find(params[:id])
+    @group = current_user.groups.includes(:expenses, :group_expenses).find(params[:id])
     @expenses_asc = @group.expenses.order(created_at: :asc)
     @total_expense = @group.expenses.sum(:amount)
   end

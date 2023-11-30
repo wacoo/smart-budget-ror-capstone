@@ -26,7 +26,7 @@
       </div>
       <div class="field">
         <%= f.label :group_ids, class: "label" %>
-        <%= f.collection_select :group_ids, @groups, :id, :name, { prompt: 'Select a group' }, { multiple: false, class: 'select' } %>
+        <%= f.collection_select :group_ids, current_user.groups, :id, :name, { prompt: 'Select a group' }, { multiple: false, class: 'select' } %>
       </div>
       <%= f.submit "ADD EXPENSE", class: "button" %>
     <% end %>
