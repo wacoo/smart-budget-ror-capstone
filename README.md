@@ -179,6 +179,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- The app UI is designed by <a href="https://www.behance.net/gregoirevella">Gregoire Vella</a>. If you want to know more about him click <a href="https://www.behance.net/gregoirevella"> this</a> link.
 - I  want to thank all my clients for their patronage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
