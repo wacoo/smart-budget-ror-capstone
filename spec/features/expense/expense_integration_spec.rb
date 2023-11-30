@@ -35,9 +35,9 @@ RSpec.describe 'Expense', type: :system do
   end
 
   context 'new' do
-    scenario 'should show food names' do
-      visit new_expense_path
+    scenario 'should show expense names' do
       sign_in(user1)
+      visit new_expense_path
       fill_in 'Name', with: 'Bread'
       fill_in 'Amount', with: 5
       select 'Morgage', from: 'expense[group_ids]'
@@ -46,16 +46,16 @@ RSpec.describe 'Expense', type: :system do
     end
 
     scenario 'should show labels' do
-      visit new_expense_path
       sign_in(user1)
+      visit new_expense_path
       expect(page).to have_content('Name')
       expect(page).to have_content('Amount')
       expect(page).to have_content('Group ids')
     end
 
     scenario 'should show submit button' do
-      visit new_expense_path
       sign_in(user1)
+      visit new_expense_path
       expect(page).to have_content('NEW EXPENSE')
     end
   end

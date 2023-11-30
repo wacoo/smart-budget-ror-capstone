@@ -41,21 +41,21 @@ RSpec.describe 'Group', type: :system do
 
   context 'index' do
     scenario 'should show food names' do
-      visit groups_path
       sign_in(user1)
+      visit groups_path
       expect(page).to have_content('Morgage')
       expect(page).to have_content('Transport')
     end
 
     scenario 'should show total expense' do
-      visit groups_path
       sign_in(user1)
+      visit groups_path
       expect(page).to have_content('$2002')
     end
 
     scenario 'should show group expenses' do
-      visit groups_path
       sign_in(user1)
+      visit groups_path
       expect(page).to have_content('$2')
       expect(page).to have_content('$2000')
     end
@@ -69,40 +69,40 @@ RSpec.describe 'Group', type: :system do
 
   context 'show' do
     scenario 'category page should have title' do
-      visit group_path(@group1)
       sign_in(user1)
+      visit group_path(@group1)
       expect(page).to have_content('EXPENSES')
     end
 
     scenario 'should have name' do
-      visit group_path(@group1)
       sign_in(user1)
+      visit group_path(@group1)
       expect(page).to have_content('Morgage')
     end
 
     scenario 'should have expense name' do
-      visit group_path(@group1)
       sign_in(user1)
+      visit group_path(@group1)
       expect(page).to have_content('Rent')
     end
 
     scenario 'should have expense' do
-      visit group_path(@group1)
       sign_in(user1)
+      visit group_path(@group1)
       expect(page).to have_content('$2000.0')
     end
   end
 
   context 'new' do
     scenario 'should have title' do
-      visit new_group_path
       sign_in(user1)
+      visit new_group_path
       expect(page).to have_content('NEW CATEGORY')
     end
 
     scenario 'should have labels' do
-      visit new_group_path
       sign_in(user1)
+      visit new_group_path
       expect(page).to have_content('Name')
       expect(page).to have_content('Icon')
     end
