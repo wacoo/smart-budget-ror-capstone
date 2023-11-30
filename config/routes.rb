@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { sessions: 'users/sessions' }
+  devise_for :users
+  get '/sign_out_user', to: 'users#sign_out_user', as: 'sign_out_user'
   # get '/users/sign_out', to: 'devise/sessions#destroy'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -10,6 +11,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "groups#index"
   get '/splash', to: 'splash#index'
-  resources :expenses
-  resources :groups
+  resources :expenses, only: [:new, :create]
+  resources :groups, only: [:index, :show, :new, :create]
+
+  # get '*path', to: redirect('/'), via: :all, constraints: lambda { |req| !req.path.starts_with?('/rails/active_storage') }
 end

@@ -5,7 +5,7 @@
             <i class="fa fa-arrow-left" aria-hidden="true"></i>
         <% end %>
         <h1>EXPENSES</h1>
-        <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete, class: "btn-user" %>
+        <%= link_to 'SIGN OUT', "/sign_out_user", method: :delete, class: "btn-user" %>
     </div>
 </header>
 <div class="notification">
@@ -15,7 +15,7 @@
 </div>
 <div class="list-groups">
     <div class="details">
-        <%= image_tag("mac.jpg", class: "icon", alt: "Icon") %>
+        <%= image_tag(@group.icon, class: "icon", alt: "Icon") %>
         <p class="total"><%= @group.name %></p>
     </div>
     <div class="line-wrapper">
@@ -40,4 +40,8 @@
             <p class="price">$<%= @total_expense %></p>
         </div>
     </div>
+
+    <div class="add-category-wrapper">
+        <a href="/expenses/new" class="add-category">+</a>
+    </div> 
 </div>

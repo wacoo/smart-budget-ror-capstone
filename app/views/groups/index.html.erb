@@ -3,11 +3,20 @@
         <!-- <img src="#" alt="Burger menu"> -->
         <a href=""><i class="fa-solid fa-bars"></i></a>
         <h1>CATEGORIES</h1>
-        <i class="fa fa-search" aria-hidden="true"></i>
+        <%= link_to '/sign_out_user', class: "btn-user" do %>
+            <i class="fa-solid fa-lock"></i>
+          <% end %>
+        <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
     </div>
     <div class="bottom">
-        <%= link_to "Most recent", root_path(order: :recent) %>
-        <%= link_to "Most ancient", root_path(order: :ancient) %>
+        <div>
+            <%= link_to "Most recent", root_path(order: :recent), class: "recent" %>
+            <i class="fa-solid fa-circle toggleable"></i>
+        </div>        
+        <div>
+            <%= link_to "Most ancient", root_path(order: :ancient), class: "ancient" %>
+            <i class="fa-solid fa-circle toggleable"></i>
+        </div>
     </div>
 </header>
 <div class="notification">

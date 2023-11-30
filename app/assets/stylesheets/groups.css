@@ -25,9 +25,20 @@
 }
 
 .bottom a {
-    margin: 24px;
+    margin: 12px 24px 0 24px;
     text-decoration: none;
     color: #fff;
+}
+
+.bottom div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom div i {
+    font-size: 8px;
+    color: #fff;
+    visibility: hidden;
 }
 
 .header i {
@@ -153,4 +164,24 @@
 .add-category-wrapper a:hover {
     background-color: #fff;
     color: #5fb523;
+}
+
+.recent,
+.ancient {
+    font-weight: 600;
+}
+
+.recent:hover ~ i,
+.ancient:hover ~ i {
+    visibility: visible;
+}
+
+#toggle:not(:target) + i {
+    visibility: visible;
+}
+
+
+
+.toggleable.active {
+    color: #fff;
 }

@@ -1,7 +1,0 @@
-<% @expenses.each do |expense| %>
-    <h1><%= expense.name %></h1>
-    <% expense.groups.each do |group| %>
-      <p><%= group.icon %></p>
-      <p><%= group.name %></p>
-    <% end %>
-  <% end %>
