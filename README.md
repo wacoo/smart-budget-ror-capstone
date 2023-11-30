@@ -102,7 +102,7 @@ The app has the following features:
 - Click <a href="https://www.loom.com/share/1706468c115d406cb2b925df89fc3ba7?sid=26240e7e-77f7-4abe-ada3-39febc516083)">here</a> to see the presentation.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+<!-- GETTING STARTED  -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
