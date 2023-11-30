@@ -94,6 +94,14 @@ The app has the following features:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+- Coming soon
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Project Presentation <a name="presentation"></a>
+- Coming soon
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
