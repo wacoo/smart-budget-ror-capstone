@@ -1,0 +1,51 @@
+<header class="header">
+    <div class="top">
+        <!-- <img src="#" alt="Burger menu"> -->
+        <%= link_to new_user_session_path, class: "btn btn-primary" do %>
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <% end %>
+        <h1>REGISTER</h1>
+        <%= link_to 'SIGN IN', new_user_session_path, class: "btn-user" %>
+    </div>
+</header>
+<div class="notification">
+    <%= flash[:notice] %>
+    <%= flash[:error] %>
+    <%= flash[:alert] %>
+</div>
+<div class="form-wrapper">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+    <%= f.label :role %><br />
+    <%= f.select :role, options_for_select(['Admin', 'User']), {}, class: "form-control" %>
+  </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: "submit" %>
+    </div>
+  <% end %>
+</div>

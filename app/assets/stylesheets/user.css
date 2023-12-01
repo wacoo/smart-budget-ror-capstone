@@ -1,0 +1,122 @@
+.form-wrapper {
+  width: calc(100% - 24px);
+  padding: 50px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper h2 {
+  color: #434b54;
+}
+
+.form-wrapper form {
+  width: 100%;
+  padding: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.field input,
+.field select {
+  width: calc(100% - 48px);
+  height: 35px;
+  padding: 0 12px;
+  margin: 0 12px;
+}
+
+.field select {
+  width: calc(100% - 24px);
+  height: 40px;
+}
+
+.field label {
+  margin: 0 12px;
+}
+
+.form-wrapper .submit,
+.form-wrapper .cancel {
+  width: calc(100% - 22px);
+  height: 50px;
+  background-color: #5fb523;
+  color: #fff;
+  margin: 12px 12px 0;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 12px 0;
+}
+
+.form-wrapper h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.form-wrapper .cancel-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-wrapper .cancel {
+  background-color: red;
+}
+
+.form-wrapper .check {
+  width: calc(100% - 24px);
+  display: flex;
+  justify-content: left;
+  margin: 0 12px;
+  font-size: 25px;
+}
+
+.create-cat input {
+  margin-left: 12px;
+}
+
+.form-wrapper .check input {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+}
+
+.form-wrapper .submit:hover,
+.form-wrapper .cancel:hover {
+  background-color: #434b54;
+  color: #fff;
+}
+
+.btn-user {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.create-cat .label {
+  width: calc(100% - 24px);
+  text-align: left;
+}
+
+.create-cat .button:hover {
+  background-color: #434b54;
+  color: #fff;
+}
+
+.create-cat label,
+.create-cat button {
+  margin-left: 12px;
+}
+
+.create-cat label {
+  font-weight: 600;
+}

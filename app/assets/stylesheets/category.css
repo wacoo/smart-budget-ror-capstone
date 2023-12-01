@@ -1,0 +1,43 @@
+.create-cat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-cat form {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-cat input {
+  text-align: center;
+  height: 40px;
+  margin: 12px 0;
+  border: #000 solid 1px;
+  display: flex;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.create-cat .button {
+  margin: 0;
+  height: 60px;
+  margin-top: 50px;
+  background-color: #5fb523;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 12px 0;
+  font-weight: 600;
+  font-size: 25px;
+  border: #fff solid 1px;
+  border-radius: 6px;
+}

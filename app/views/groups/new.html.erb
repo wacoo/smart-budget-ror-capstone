@@ -1,0 +1,28 @@
+<header class="header">
+    <div class="top">
+        <!-- <img src="#" alt="Burger menu"> -->
+        <%= link_to groups_path, class: "btn btn-primary" do %>
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <% end %>
+        <h1>NEW CATEGORY</h1>
+        <%= link_to 'SIGN OUT', '/sign_out_user', class: "btn-user" %>
+    </div>
+</header>
+<div class="notification">
+    <%= flash[:notice] %>
+    <%= flash[:error] %>
+    <%= flash[:alert] %>
+</div>
+<div class="create-cat">
+  <%= form_with(model: @group, url: groups_path, method: :post, local: true, multipart: true ) do |form| %>
+    <div class="field">
+      <%= form.label :name, "Name" %>
+      <%= form.text_field :name, id: "name", placeholder: "Name" %>
+    </div>
+    <div class="field">
+      <%= form.label :icon, "Icon" %>
+      <%= form.file_field :icon, id: "icon" %>
+    </div>
+    <%= form.submit "ADD CATEGORY", class: "button" %>
+  <% end %>
+</div>

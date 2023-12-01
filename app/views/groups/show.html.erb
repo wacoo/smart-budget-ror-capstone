@@ -1,0 +1,47 @@
+<header class="header">
+    <div class="top">
+        <!-- <img src="#" alt="Burger menu"> -->
+        <%= link_to groups_path, class: "btn btn-primary" do %>
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <% end %>
+        <h1>EXPENSES</h1>
+        <%= link_to 'SIGN OUT', "/sign_out_user", method: :delete, class: "btn-user" %>
+    </div>
+</header>
+<div class="notification">
+    <%= flash[:notice] %>
+    <%= flash[:error] %>
+    <%= flash[:alert] %>
+</div>
+<div class="list-groups">
+    <div class="details">
+        <%= image_tag(@group.icon, class: "icon", alt: "Icon") %>
+        <p class="total"><%= @group.name %></p>
+    </div>
+    <div class="line-wrapper">
+        <hr class="line">
+    </div>
+    <div class="one-transaction">
+        <div class="transaction-data">
+            <h2>DETAILS</h2>
+            <p class="gn-date"><%= @group.created_at %><p/>
+        </div>
+        <div class="item">
+            <hr class="line-short">
+            <% @expenses_asc.each do |expense|%>
+                <div class="p-wrapper">
+                    <p><%= expense.name %></p>
+                    <p>$<%= expense.amount %></p>
+                </div>
+            <% end %>
+        </div>
+        <div class="total-transaction">
+            <h2>TOTAL EXPENSE</h2>
+            <p class="price">$<%= @total_expense %></p>
+        </div>
+    </div>
+
+    <div class="add-category-wrapper">
+        <a href="/expenses/new" class="add-category">+</a>
+    </div> 
+</div>

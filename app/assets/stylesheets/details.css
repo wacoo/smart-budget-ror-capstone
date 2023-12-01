@@ -1,0 +1,110 @@
+.header-two {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: #3778c2;
+}
+
+.header-two i {
+  font-size: 37px;
+  color: #fff;
+  margin: 12px;
+}
+
+.header-two .center {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.details {
+  height: 100px;
+  margin: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 12px;
+}
+
+.details img {
+  margin-right: 12px;
+}
+
+.line {
+  width: calc(100% - 24px);
+  font-size: 15px;
+  color: gray;
+}
+
+.line-short {
+  width: 230px;
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 12px;
+}
+
+.one-transaction {
+  width: calc(100% - 24px);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.total-transaction {
+  width: calc(100% - 24px);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin: 12px;
+  font-weight: 600;
+  border: #434b54 dashed 2px;
+}
+
+.line-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.transaction-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 12px 24px 0;
+}
+
+.transaction-data .gn-date {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.item {
+  width: calc(100% - 48px);
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 24px;
+}
+
+.total-expense {
+  width: calc(100% - 24px);
+  display: flex;
+  justify-content: space-between;
+  color: #434b54;
+}
+
+.p-wrapper {
+  width: calc(100% - 48px);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+}

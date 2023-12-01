@@ -1,0 +1,31 @@
+<header class="header">
+    <div class="top">
+        <!-- <img src="#" alt="Burger menu"> -->
+        <%= link_to new_user_session_path, class: "btn btn-primary" do %>
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <% end %>
+        <h1>PASSWORD RESET</h1>
+        <%= link_to 'SIGN IN', new_user_session_path, class: "btn-user" %>
+    </div>
+</header>
+<div class="notification">
+    <%= flash[:notice] %>
+    <%= flash[:error] %>
+    <%= flash[:alert] %>
+</div>
+<div class="form-wrapper">
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Send me reset password instructions", class: "submit" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>

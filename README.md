@@ -94,7 +94,15 @@ The app has the following features:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+## 🚀 Live Demo <a name="live-demo"></a>
+- Click <a href="https://smart-budget-6u1l.onrender.com/">here</a> to see the live demo.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Project Presentation <a name="presentation"></a>
+- Click <a href="https://www.loom.com/share/36a8052e42674c10bf457ff33417a91c?sid=3f305e7b-e686-4bb5-8e41-ec4df530dadf">here</a> to see the presentation.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED  -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -171,6 +179,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- The app UI is designed by <a href="https://www.behance.net/gregoirevella">Gregoire Vella</a>. If you want to know more about him click <a href="https://www.behance.net/gregoirevella"> this</a> link.
 - I  want to thank all my clients for their patronage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
